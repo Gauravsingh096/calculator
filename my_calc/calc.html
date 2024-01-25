@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Basic Calculator</h1>
+        </div>
+        <div class="display-sec">
+            <input type="text" id="display" class="display" name="display" readonly >
+            <p class="error" id="error"></p>
+        </div>
+        <div class="buttons-sec">
+            <button onclick="clearDisplay()" class="btn_clear">C</button>
+            <button onclick="operand('%')" class="operator_btn">%</button>
+            <button onclick="Backspace()" class="digit_btn">←</button>
+            <button onclick="operand('/')" class="operator_btn">/</button>
+
+            <button onclick="numberClick(7)" class="digit_btn">7</button>
+            <button onclick="numberClick(8) " class="digit_btn">8</button>
+            <button onclick="numberClick(9) " class="digit_btn">9</button>
+            <button onclick="operand('*')" class="operator_btn ">*</button>
+
+            <button onclick="numberClick(4)" class="digit_btn">4</button>
+            <button onclick="numberClick(5) " class="digit_btn">5</button>
+            <button onclick="numberClick(6) " class="digit_btn">6</button>
+            <button onclick="operand('-')" class="operator_btn ">-</button>
+            
+            <button onclick="numberClick(1) " class="digit_btn">1</button>
+            <button onclick="numberClick(2) " class="digit_btn">2</button>
+            <button onclick="numberClick(3) " class="digit_btn">3</button>
+            <button onclick="operand('+')" class="operator_btn">+</button>
+        
+            <button onclick="numberClick('00')"class="digit_btn">00</button>
+            <button onclick="numberClick('0')"class="digit_btn">0</button>
+            <button onclick="operand('.')" class="operator_btn ">.</button>
+            <button onclick="Result()"class="digit_btn">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
